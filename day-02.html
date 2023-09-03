@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .item {
+        font-weight: 500;
+      }
+
+      .item:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+    <h1>Submarine control</h1>
+    <form id="command-form"></form>
+    <label for="command-input"
+      >Enter the command (separated by a comma or a new line)</label
+    >
+    <textarea
+      id="command-input"
+      rows="4"
+      cols="50"
+      placeholder="Example, forward 5 down 5 forward 8 up 3"
+    ></textarea>
+    <button type="button" id="button">Perform</button>
+
+    <h1>The results</h1>
+    <p>Horizontal position: <span id="horizontal-position">0</span></p>
+    <p>Depth: <span id="depth">0</span></p>
+    <p>Result: <span id="result">0</span></p>
+
+    <script src="js/day-02.js" type="module"></script>
+  </body>
+</html>
