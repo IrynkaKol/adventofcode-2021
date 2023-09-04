@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .item {
+        font-weight: 500;
+      }
+
+      .item:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+    <h1>Binary Diagnostic</h1>
+    <label for="diagnosticReport"
+      >Diagnostic report (enter binary numbers separated by newlines):</label
+    >
+    <textarea id="diagnosticReport" rows="10" cols="30"></textarea>
+    <button id="calculateButton">Calculate the power consumption</button>
+    <script src="js/day-03.js" type="module"></script>
+  </body>
+</html>
